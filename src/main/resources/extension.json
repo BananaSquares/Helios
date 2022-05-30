@@ -1,0 +1,5 @@
+{
+  "entrypoint": "com.ewanfox.helios.Main",
+  "name": "TestExtension",
+  "version": "1.0.0"
+}
