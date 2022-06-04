@@ -27,7 +27,8 @@ repositories {
 }
 
 dependencies {
-    implementation("com.github.Project-Cepi:KStom:82f7000079")
+    api("com.github.Project-Cepi:KStom:82f7000079")
+
     // Align versions of all Kotlin components
     compileOnly(platform("org.jetbrains.kotlin:kotlin-bom"))
 
@@ -54,7 +55,7 @@ configurations {
 tasks {
     processResources {
         // Apply properties to extension.json
-        filesMatching("META-INF/extension.json") {
+        filesMatching("extension.json") {
             expand(project.properties)
         }
     }
